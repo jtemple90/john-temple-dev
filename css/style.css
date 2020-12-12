@@ -13,6 +13,7 @@
     
     .navbar {
         background-color: #131313;
+        opacity: .9;
         height: 80px;
         display: flex;
         justify-content: center;
@@ -48,6 +49,7 @@
         cursor: pointer;
         text-decoration: none;
         font-size: 2rem;
+        padding-bottom: 15px;
     }
     
     .navbar-menu {
@@ -109,8 +111,9 @@
             height: 50vh;
             font-size: 1.5rem;
         }
-        .navbar-logo {
+        #navbar-logo {
             padding-left: 25px;
+            padding-bottom: 15px;
         }
         .navbar-toggle .bar {
             width: 25px;
@@ -152,14 +155,11 @@
     
     .main {
         background-image: url(../images/mainbackground.jpg);
-        background-size: 95vh 100vw;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-blend-mode: darken;
         z-index: -1;
-        height: 90vh;
-        width: 100vw;
-        margin: 0;
     }
     
     .main-container {
@@ -169,17 +169,97 @@
         justify-content: center;
         margin: 0 auto;
         height: 90vh;
+        width: 100vw;
     }
     
     .main-content {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         text-align: center;
         color: white;
         z-index: 1;
     }
     
+    .avatar {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        border: 1px solid;
+    }
+    
     .main-content h1 {
         font-size: 3rem;
+    }
+    
+    #projects {
+        background-color: black;
+        opacity: .9;
+    }
+    
+    .page-header {
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+    }
+    
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: space-between;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        margin: 4em;
+        border-radius: 5px;
+    }
+    
+    .project-image {
+        width: 90%;
+        height: 200px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 10px;
+    }
+    
+    .card-title {
+        align-self: start;
+        margin-left: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+    }
+    
+    .card-description {
+        margin: 5px 30px;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .project-link {
+        background-color: black;
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 25px 55px 15px 55px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
     }
