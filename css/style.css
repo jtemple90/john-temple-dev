@@ -421,12 +421,13 @@
         display: flex;
         position: fixed;
         flex-direction: row;
-        padding-top: 4em;
-        padding-left: 1em;
+        padding: 2em;
         align-content: center;
         justify-content: space-between;
         position: relative;
         width: 100vw;
+        margin-top: 100px;
+        padding: 8em 2em 0 2em;
     }
     
     .info-link {

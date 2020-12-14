@@ -107,7 +107,7 @@
     <section class='contact' id='contact'>
         <h5 class='page-header'>Lets Connect</h5><br/>
         <div class="form-container">
-            <form class='user-form' action="">
+            <form id='user-form' class='user-form' action="https://formspree.io/f/xqkgywzj" method="POST">
                 <div class="userfield">
                     <span class="field-info">Name</span>
                     <input type="text" name="name" id="tname">
@@ -126,8 +126,9 @@
                     <textarea name="contact-info" id="message" cols="50" rows="5" placeholder='Write your message here...'></textarea>
                 </div>
                 <div class='button'>
-                    <button class='btn-submit'>Submit</button>
+                    <button id='button' class='btn-submit'>Submit</button>
                 </div>
+                <p id="status"></p>
             </form>
         </div>
         <footer class='footer'>
