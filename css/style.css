@@ -5,9 +5,11 @@
         font-family: "Poppins";
         scroll-behavior: smooth;
     }
+    
     html {
         height: 100%;
     }
+    
     body {
         background-image: url(../images/backgroud.jpg);
         background-repeat: no-repeat;
@@ -43,7 +45,6 @@
         margin-left: auto;
         padding-right: 30px;
         padding-left: 50px;
-        color: white;
     }
     
     #navbar-logo {
@@ -54,8 +55,6 @@
         align-items: center;
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
         cursor: pointer;
         text-decoration: none;
         font-size: 2rem;
@@ -94,7 +93,6 @@
     @media screen and (max-width: 960px) {
         /* NavBar Start */
         .navbar-container {
-          
             display: flex;
             justify-content: space-between;
             height: 80px;
@@ -478,6 +476,7 @@
         box-shadow: 2px 2px 4px #000000;
         outline: none;
     }
+    
     .btn-submit:hover {
         opacity: 1;
         widows: 180px;
@@ -499,7 +498,7 @@
         width: 100vw;
         padding: 6em 2em 0 2em;
     }
-     
+    
     .info-link {
         font-size: 30px;
         display: inline-flex;
