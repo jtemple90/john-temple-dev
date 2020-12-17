@@ -32,7 +32,7 @@
                     <a href="#projects" class='nav-link' id="projects-page">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class='nav-link' id="projects-page">Contact</a>
+                    <a href="#contact" class='nav-link' id="contact-page">Contact</a>
                 </li>
             </ul>
         </div>
@@ -42,16 +42,20 @@
             <div class="main-content">
                 <div class="info">
                     <div>
-                        <img src="/images/profileimg.jpg" alt="profile-photo" class="avatar">
+                        <img src="./../images/profileimg.jpg" alt="profile-photo" class="avatar">
                     </div>
                     <h1>John Temple</h1>
                     <h3>Software Engineer</h3>
-                </div>
-                <div class='about'>
-                    <p>I am a father and a full stack Software Engineer. I recently completed General Assembly's Software Engineering Immersive program and im looking forward to starting my new career!</p>
+                    <button class='main-contact'>
+                        <a class='contact-btn' href="#contact">Contact Me</a>
+                    </button>
+                    <div>
+                        <a class='i-link ' href="https://www.linkedin.com/in/john-temple-dev/ "><i class="fab fa-linkedin-in "></i></a>
+                        <a class='i-link ' href="https://github.com/jtemple90 "><i class="fab fa-github-alt "></i></a>
+                        <!-- <a class='i-link ' href="# "><i class="fab fa-instagram "></i></a> -->
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
     <section id="projects">
@@ -60,87 +64,85 @@
         </div>
         <div class="card-container">
             <div class="card">
-                <img class='project-image' src="./images/mainbackground.jpg" alt="Project1Pic">
-                <h3 class='card-title'>Spot Me</h3>
+                <img class='project-image ' src="./images/mainbackground.jpg" alt="Project1Pic">
+                <h3 class='card-title '>Spot Me</h3>
                 <p class="card-description">A full stack react home workout building mobile-first app.</p>
                 <p class="card-description">Technologies: React, Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
                 <div class="links">
-                    <a href="#" class='project-link link1'>Github</a>
-                    <a href="#" class='project-link link2'>Website</a>
+                    <a href="#" class='project-link link1 '>Github</a>
+                    <a href="#" class='project-link link2 '>Website</a>
                 </div>
             </div>
             <div class="card">
-                <img class='project-image' src="./images/mainbackground.jpg" alt="Project1Pic">
-                <h3 class='card-title'>Spot Me</h3>
-                <p class="card-description">A full stack react home workout building mobile-first app.</p>
-                <p class="card-description">Technologies: React, Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
+                <img class='project-image ' src="./images/mainbackground.jpg" alt="Project1Pic">
+                <h3 class='card-title '>Wayfarer</h3>
+                <p class="card-description">A full stack travel site</p>
+                <p class="card-description">Technologies: Python, Django, PostgreSQL, Bootstrap</p>
 
                 <div class="links">
-                    <a href="#" class='project-link link1'>Github</a>
-                    <a href="#" class='project-link link2'>Website</a>
+                    <a href="#" class='project-link link1 '>Github</a>
+                    <a href="#" class='project-link link2 '>Website</a>
                 </div>
             </div>
             <div class="card">
-                <img class='project-image' src="./images/mainbackground.jpg" alt="Project1Pic">
-                <h3 class='card-title'>Spot Me</h3>
-                <p class="card-description">A full stack react home workout building mobile-first app.</p>
-                <p class="card-description">Technologies: React, Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
+                <img class='project-image ' src="./images/mainbackground.jpg" alt="Project1Pic">
+                <h3 class='card-title '>Bakes To Banks</h3>
+                <p class="card-description">A full stack app that pairs bakeries with users.</p>
+                <p class="card-description">Technologies:Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
                 <div class="links">
-                    <a href="#" class='project-link link1'>Github</a>
-                    <a href="#" class='project-link link2'>Website</a>
+                    <a href="#" class='project-link link1 '>Github</a>
+                    <a href="#" class='project-link link2 '>Website</a>
                 </div>
             </div>
             <div class="card">
-                <img class='project-image' src="./images/mainbackground.jpg" alt="Project1Pic">
-                <h3 class='card-title'>Spot Me</h3>
-                <p class="card-description">A full stack react home workout building mobile-first app.</p>
-                <p class="card-description">Technologies: React, Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
+                <img class='project-image ' src="./images/tamagotchi.png alt=" Project1Pic ">
+                <h3 class='card-title '>Tamagotchi</h3>
+                <p class="card-description ">A front end Tamagotchi Game using Pokemon</p>
+                <p class="card-description ">Technologies: HTML/CSS, Javascript</p>
 
-                <div class="links">
-                    <a href="#" class='project-link link1'>Github</a>
-                    <a href="#" class='project-link link2'>Website</a>
+                <div class="links ">
+                    <a href="https://github.com/jtemple90/Tamagotchi-game " class='project-link link1 '>Github</a>
+                    <a href="https://jtemple90.github.io/Tamagotchi-game/ " class='project-link link2 '>Website</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class='contact' id='contact'>
-        <h5 class='page-header'>Lets Connect</h5><br/>
-        <div class="contact-page">
-        <div class="form-container">
-            <form class='user-form' action="">
-                <div class="userfield">
-                    <span class="field-info">Name</span>
-                    <input type="text" name="name" id="tname">
+        <h5 class='page-header '>Lets Connect</h5><br/>
+        <div class="form-container ">
+            <form id='user-form ' class='user-form ' action="https://formspree.io/f/xqkgywzj " method="POST ">
+                <div class="userfield ">
+                    <span class="field-info ">Name</span>
+                    <input type="text " name="name " id="tname ">
                 </div>
-                <div class="userfield">
-                    <span class="field-info">Email</span>
-                    <input type="email" name="email" id="email">
+                <div class="userfield ">
+                    <span class="field-info ">Email</span>
+                    <input type="email " name="email " id="email ">
                 </div>
-                <div class="userfield">
-                    <span class="field-info">Subject</span>
-                    <input type="text" name="subject" id="subject">
+                <div class="userfield ">
+                    <span class="field-info ">Subject</span>
+                    <input type="text " name="subject " id="subject ">
                 </div>
 
-                <div class="textfield">
-                    <span class="field-info">Message</span>
-                    <textarea name="contact-info" id="message" cols="50" rows="5" placeholder='Write your message here...'></textarea>
+                <div class="textfield ">
+                    <span class="field-info ">Message</span>
+                    <textarea name="contact-info " id="message " cols="50 " rows="5 " placeholder='Write your message here... '></textarea>
                 </div>
-                <div class='button'>
-                    <button class='btn-submit'>Submit</button>
+                <div class='button '>
+                    <button id='button ' class='btn-submit '>Submit</button>
                 </div>
+                <p id="status "></p>
             </form>
         </div>
-                <div class='footer'>
-                    <div class='icons'>
-                        <a class='info-link' href="https://www.linkedin.com/in/john-temple-dev/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class='info-link' href="https://github.com/jtemple90"><i class="fab fa-github-alt"></i></a>
-                        <a class='info-link' href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <div class="copyright">
-                        <p>John Temple Dev, Copryright &copy; h 2020</p>
-                    </div>
-                </div>
+        <footer class='footer '>
+            <div class='icons '>
+                <a class='info-link ' href="https://www.linkedin.com/in/john-temple-dev/ "><i class="fab fa-linkedin-in iconfont "></i></a>
+                <a class='info-link ' href="https://github.com/jtemple90 "><i class="fab fa-github-alt iconfont "></i></a>
+                <a class='info-link ' href="# "><i class="fab fa-instagram iconfont "></i></a>
+            </div>
+            <div class="copyright ">
+                <p>John Temple Dev, Copryright &copy; h 2020</p>
             </div>
     </section>
 </body>
