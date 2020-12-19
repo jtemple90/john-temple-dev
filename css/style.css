@@ -11,7 +11,8 @@
     }
     
     body {
-        background-image: url(../images/backgroud.jpg);
+        background-color: #A9B2B6;
+        background-image: url(../images/ground.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         align-items: center;
@@ -496,7 +497,7 @@
         justify-content: space-between;
         position: relative;
         width: 100vw;
-        padding: 6em 2em 0 2em;
+        padding: 2em 0 2em;
     }
     
     .info-link {
