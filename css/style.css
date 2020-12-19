@@ -11,7 +11,8 @@
     }
     
     body {
-        background-image: url(../images/backgroud.jpg);
+        background-image: url(../images/brick.jpg);
+        background-blend-mode: difference;
         background-repeat: no-repeat;
         background-attachment: fixed;
         align-items: center;
@@ -163,14 +164,13 @@
         }
         /* Navbar End */
     }
+    /* ABOUT ME ================================================================= */
     
     .main {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        filter: grayscale(90%);
         z-index: -1;
-        padding-top: 10vh;
     }
     
     .main-container {
@@ -193,31 +193,40 @@
         z-index: 1;
     }
     
+    .main-about {
+        display: flex;
+        flex-direction: column;
+        text-shadow: 2px 2px 4px #000000;
+        padding-left: 3rem;
+    }
+    
     .avatar {
-        height: 250px;
-        width: 250px;
-        border-radius: 15px;
-        border: 3px solid;
-        box-shadow: 2px 2px 4px #000000;
+        height: 40vh;
+        width: 40vh;
+        border-radius: 50px;
+        border: 1px solid;
+        box-shadow: 4px 4px 8px #000000;
         margin-bottom: 2em;
     }
     
-    .main-content h1 {
+    .about-me {
+        display: flex;
+        flex-direction: column;
         text-shadow: 2px 2px 4px #000000;
-        font-size: 3rem;
-        text-align: start;
+        width: 35vw;
+        padding: 10em;
     }
     
-    .about {
-        border: 1px solid black;
+    .about-me h1 {
         text-shadow: 2px 2px 4px #000000;
-        width: 30vw;
-        height: 40vw;
-        padding: 4 em;
+        font-size: 4rem;
     }
     
     .main-contact {
         border: 1px solid white;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
         width: 150px;
         height: 35px;
         background-color: #434959;
@@ -229,8 +238,11 @@
     
     .main-contact:hover {
         opacity: 1;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 4px 4px 8px #000000;
         font-size: 18px;
+        width: 200px;
+        height: 50px;
+        transition: all 0.1s ease;
     }
     
     .i-link {
@@ -245,9 +257,12 @@
     .i-link:hover {
         text-decoration: none;
         color: white;
+        font-size: 40px;
+        text-shadow: 4px 4px 6px #000000;
     }
     
     .contact-btn {
+        display: inline;
         color: white;
         text-decoration: none;
     }
@@ -354,7 +369,7 @@
         font-size: 20px;
         width: 130px;
         transform: scale(1.1);
-        transition: all ease-in-out .1s;
+        transition: ease-in-out .1s;
     }
     
     .link1 {
@@ -489,14 +504,13 @@
     
     .footer {
         display: flex;
-        position: fixed;
+        /* position: fixed; */
         flex-direction: row;
-        /* padding: 2em 2em 2em 2em; */
+        padding: 9em 2em 2em 2em;
         align-content: center;
         justify-content: space-between;
         position: relative;
         width: 100vw;
-        padding: 6em 2em 0 2em;
     }
     
     .info-link {
@@ -506,10 +520,13 @@
         color: white;
         text-shadow: 2px 2px 4px #000000;
         padding: 0 2px 5px 20px;
+        opacity: .8;
     }
     
     .info-link:hover {
-        color: whitesmoke;
+        color: grey;
+        opacity: 1;
+        text-shadow: 5px 5px 10px #000000;
     }
     
     .copyright {
