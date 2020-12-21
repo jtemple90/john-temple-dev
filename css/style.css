@@ -8,23 +8,18 @@
     
     html {
         height: 100%;
+        scroll-behavior: smooth;
     }
     
     body {
-        background-image: url(../images/brick.jpg);
-        background-blend-mode: difference;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        align-items: center;
-        background-size: cover;
-        filter: grayscale(100%);
         z-index: -1;
+        height: 100vh;
     }
     /* ================Nav=============== */
     
     .navbar {
-        background-color: none;
-        height: 60px;
+        background-color: #048FB6;
+        height: 80px;
         display: flex;
         justify-content: space-between;
         width: 100vw;
@@ -33,6 +28,7 @@
         position: sticky;
         top: 0;
         z-index: 100;
+        box-shadow: 1px 1px 3px #000000;
     }
     
     .navbar-container {
@@ -44,8 +40,8 @@
         max-width: 1300px;
         margin-right: auto;
         margin-left: auto;
-        padding-right: 30px;
-        padding-left: 50px;
+        /* padding-right: 30px;
+        padding-left: px; */
     }
     
     #navbar-logo {
@@ -58,14 +54,15 @@
         -moz-background-clip: text;
         cursor: pointer;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding-bottom: 15px;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 4px 4px 4px #000000;
     }
     
     .navbar-menu {
         display: flex;
         align-items: center;
+        /* justify-content: space-between; */
         list-style: none;
         text-align: center;
     }
@@ -79,7 +76,7 @@
         text-shadow: 2px 2px 4px #000000;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         text-decoration: none;
         height: 100%;
         padding: 0 1rem;
@@ -87,8 +84,8 @@
     }
     
     .nav-link:hover {
-        color: #DEE7ED;
-        transition: all .4s ease-in-out;
+        color: #a4c5dc;
+        transition: all .2s ease-in-out;
     }
     
     @media screen and (max-width: 960px) {
@@ -167,6 +164,8 @@
     /* ABOUT ME ================================================================= */
     
     .main {
+        background-color: #1C0A24;
+        background-image: url('../images/backgroung.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -197,10 +196,20 @@
         display: flex;
         flex-direction: column;
         text-shadow: 2px 2px 4px #000000;
-        padding-left: 3rem;
+        padding: 3rem;
+    }
+    
+    .my-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     
     .avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: 40vh;
         width: 40vh;
         border-radius: 50px;
@@ -239,6 +248,7 @@
     .main-contact:hover {
         opacity: 1;
         text-shadow: 4px 4px 8px #000000;
+        background-color: #048FB6;
         font-size: 18px;
         width: 200px;
         height: 50px;
@@ -256,7 +266,7 @@
     
     .i-link:hover {
         text-decoration: none;
-        color: white;
+        color: #048FB6;
         font-size: 40px;
         text-shadow: 4px 4px 6px #000000;
     }
@@ -273,7 +283,7 @@
     }
     
     #projects {
-        filter: grayscale(90%);
+        background-color: #4E6F90;
         z-index: -5;
     }
     
@@ -368,6 +378,8 @@
         color: white;
         font-size: 20px;
         width: 130px;
+        background-color: #048FB6;
+        text-shadow: 4px 4px 6px #000000;
         transform: scale(1.1);
         transition: ease-in-out .1s;
     }
@@ -386,11 +398,13 @@
     /* ==================Contact============================= */
     
     .contact {
+        background-color: #4E6F90;
         height: 100vh;
         width: 100%;
         /* background: linear-gradient( darkgray, black); */
         /* filter: grayscale(50%); */
         z-index: -1;
+        padding: 3em;
     }
     
     .form-container {
@@ -420,7 +434,7 @@
     }
     
     input {
-        background: #4e4f55;
+        background-color: #5a87b3;
         border-bottom: 1px solid white;
         color: white;
         min-width: 300px;
@@ -445,9 +459,10 @@
     }
     
     textarea {
-        background: #4e4f55;
+        /* background: #4e4f55; */
+        background-color: #5a87b3;
+        ;
         text-shadow: 2px 2px 4px #000000;
-        opacity: .8;
         box-shadow: 2px 2px 4px #000000;
         color: white;
         min-width: 300px;
@@ -471,6 +486,13 @@
     
     .button {
         height: 40px;
+        opacity: 0.5;
+        padding-bottom: 15px;
+    }
+    
+    .button:hover {
+        opacity: 1;
+        color: white;
     }
     
     .btn-submit {
@@ -478,6 +500,7 @@
         height: 35px;
         font-size: 18px;
         border: none;
+        opacity: 0.3;
         align-items: center;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -485,7 +508,7 @@
         -moz-background-clip: padding;
         -webkit-background-clip: padding-box;
         color: whitesmoke;
-        background: #4e4f55;
+        background-color: #4E6F90;
         text-shadow: 2px 2px 4px #000000;
         opacity: .8;
         box-shadow: 2px 2px 4px #000000;
@@ -495,6 +518,8 @@
     .btn-submit:hover {
         opacity: 1;
         widows: 180px;
+        background-color: #5a87b3;
+        color: white;
         box-shadow: 4px 4px 8px #000000;
     }
     
@@ -504,9 +529,9 @@
     
     .footer {
         display: flex;
-        /* position: fixed; */
+        position: fixed;
         flex-direction: row;
-        padding: 9em 2em 2em 2em;
+        padding: 9em 0 3vw 3vw;
         align-content: center;
         justify-content: space-between;
         position: relative;
@@ -517,21 +542,20 @@
         font-size: 30px;
         display: inline-flex;
         text-decoration: none;
+        padding-right: 5vw;
         color: white;
         text-shadow: 2px 2px 4px #000000;
-        padding: 0 2px 5px 20px;
         opacity: .8;
     }
     
     .info-link:hover {
-        color: grey;
+        color: #5a87b3;
         opacity: 1;
         text-shadow: 5px 5px 10px #000000;
     }
     
     .copyright {
-        padding-top: 10px;
-        padding-right: 1em;
+        padding-right: 4em;
         color: white;
         text-shadow: 2px 2px 4px #000000;
     }
