@@ -45,7 +45,11 @@
         /* padding-right: 30px;
         padding-left: px; */
     }
-    
+    .logo {
+        height: 50px;
+        width: 75px;
+        text-shadow: 4px 4px 4px #000000;
+    }
     #navbar-logo {
         background-color: white;
         color: white;
@@ -184,7 +188,7 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        height: 100vh;
+        height: 90vh;
         width: 100vw;
     }
     
@@ -365,7 +369,7 @@
         position: relative;
         width: 100px;
         height: 50px;
-        box-shadow: 0 0 5px 0 grey;
+        box-shadow: 2px 2px 5px  #000000;
         border-radius: 20px;
         margin: 25px 55px 15px 55px;
         color: black;
@@ -379,9 +383,8 @@
     }
     
     .project-link:hover {
-        background-color: #373737;
         opacity: .5;
-        box-shadow: 0 0 7px 0 black;
+        box-shadow: 3px 3px 7px 0 black;
         color: white;
         font-size: 20px;
         width: 130px;
@@ -494,6 +497,7 @@
     }
     
     .button {
+        padding-top: 1em;
         height: 40px;
         opacity: 0.5;
         padding-bottom: 15px;
