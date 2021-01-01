@@ -20,54 +20,33 @@
     
     .navbar {
         background: black;
-        height: 80px;
+        height: 55px;
         display: flex;
         /* opacity: 0.7; */
-        justify-content: space-between;
+        justify-content: space-around;
+        align-content: center;
         width: 100vw;
         align-items: center;
         font-size: 1.2rem;
         position: fixed;
-        top: 0;
+        padding-top: 20px;
         z-index: 100;
         box-shadow: 1px 1px 3px #333333;
     }
     
     .navbar-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         height: 80px;
         z-index: 1;
         width: 100%;
         max-width: 1300px;
-        margin-right: auto;
-        margin-left: auto;
-        /* padding-right: 30px;
-        padding-left: px; */
     }
-    .logo {
-        height: 50px;
-        width: 75px;
-        text-shadow: 4px 4px 4px whitesmoke;
-    }
-    #navbar-logo {
-        color: white;
-        background-size: 100%;
-        display: flex;
-        align-items: center;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 2.2rem;
-        padding-bottom: 15px;
-        text-shadow: 2px 2px 3px rgb(95, 95, 95);
-    }
-    
+   
     .navbar-menu {
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
+        justify-content: space-around;
         list-style: none;
         text-align: center;
     }
@@ -78,19 +57,21 @@
     
     .nav-link {
         color: white;
-       text-shadow: 2px 2px 3px rgb(95, 95, 95);
+        text-shadow: 1px 1px 2px white;
         display: flex;
         align-items: center;
+        margin: 0 5em;
         justify-content: flex-end;
         text-decoration: none;
         height: 100%;
-        padding: 0 1rem;
         transition: all .3s ease;
     }
     
     .nav-link:hover {
-        color: #5a5f7a;
+        color: white;
+        text-shadow: 1px 1px 2px whitesmoke;
         transition: all .2s ease-in-out;
+        text-decoration: underline;
     }
     
     @media screen and (max-width: 960px) {
@@ -176,7 +157,6 @@
     .main {
         background-color:black;
         background-image: url('../images/pexels-mateusz-dach-450035.jpg');
-      
         filter: grayscale(100%);
         background-blend-mode: difference;
         background-size: cover;
@@ -185,7 +165,23 @@
         background-position: center center;
         z-index: -1;
     }
-    
+    .introduction {
+        position: absolute;
+        left: 5em;
+        top: 5em;
+    }
+    .name {
+        font-size: 110px;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+        text-shadow: 2px 2px 3px black;
+    }
+    .position {
+        font-size: 40px;
+        text-shadow: 2px 2px 3px black;
+        padding-right: 6.5em;
+
+    }
     .main-container {
         display: flex;
         align-items: center;
@@ -212,10 +208,6 @@
         text-shadow: 2px 2px 4px #000000;
         padding: 3rem;
     }
-    .nav-logo {
-        padding-left: 2vw;
-    }
-   
     .about-me {
         display: flex;
         flex-direction: column;
@@ -252,21 +244,33 @@
         height: 50px;
         transition: all 0.1s ease;
     }
+    .icons {
+        position: absolute;
+    }
     
     .i-link {
         display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        top: 14em;
+        border-radius: 50%;
+        box-shadow: 3px 3px 4px gray, -3px -3px 4px gray;
+        margin-left: 1em;
         padding: 1em;
         font-size: 32px;
         color: white;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 2px 2px 4px #000000, 2px 2px 4px #000000;
         text-decoration: none;
     }
     
     .i-link:hover {
         text-decoration: none;
-        color: #048FB6;
-        font-size: 40px;
-        text-shadow: 4px 4px 6px #000000;
+        color: black;
+        background-color: white;
+        text-shadow: 1px 1px 1px grey, 1px 1px 2px grey;
     }
     
     .contact-btn {
@@ -289,7 +293,7 @@
         color: white;
         display: flex;
         justify-content: center;
-        padding-top: 1em;
+        padding-top: 3em;
         font-size: 3em;
         text-decoration: underline;
         z-index: 2000;
@@ -426,13 +430,13 @@
         -moz-background-clip: padding;
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
+        outline: none ;
         overflow: hidden;
         color: white;
-        text-shadow: 2px 2px 4px #000000;
     }
     
     input {
-        background-color: whitesmoke;
+        background-color: white;
         border-bottom: 1px solid white;
         color: black;
         min-width: 300px;
@@ -442,6 +446,7 @@
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         border-radius: 10px;
+         outline: none ;
         -moz-background-clip: padding;
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
@@ -457,14 +462,14 @@
     }
     
     textarea {
-        /* background: #4e4f55; */
-        background-color: whitesmoke;
+        background-color: white;
         text-shadow: 1px 1px 2px #000000;
         box-shadow: 2px 2px 4px #000000;
         color: black;
         min-width: 300px;
         width: 100%;
         height: 110px;
+         outline: none ;
         border-bottom: 15px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -484,7 +489,7 @@
     .button {
         padding-top: 1em;
         height: 40px;
-        opacity: 0.5;
+        opacity: 0.9;
         padding-bottom: 15px;
     }
     
@@ -498,15 +503,15 @@
         height: 35px;
         font-size: 18px;
         border: none;
-        opacity: 0.3;
+        opacity: 0.5;
         align-items: center;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         border-radius: 10px;
         -moz-background-clip: padding;
         -webkit-background-clip: padding-box;
-        color: whitesmoke;
-        background-color: #4E6F90;
+        color: black;
+        background-color: white;
        text-shadow: 2px 2px 3px rgb(95, 95, 95);
         opacity: .8;
         box-shadow: 2px 2px 4px #000000;
@@ -516,9 +521,8 @@
     .btn-submit:hover {
         opacity: 1;
         widows: 180px;
-        background-color: #5a87b3;
-        color: white;
-        box-shadow: 4px 4px 8px #000000;
+        border: 1px;
+        box-shadow: 1px 1px 2px white;
     }
     
     .field-info {
@@ -526,39 +530,17 @@
     }
     
     .footer {
-        background-color: #4E6F90;
-        background-size: cover;
-        /* margin: 0; */
-        display: flex;
         background-color: none;
-        position: fixed;
-        align-items: center;
+        display: flex;
         justify-content: center;
+
         align-content: center;
-        flex-direction: row;
-        /* padding: 2em 5vw 0 5vw; */
-        align-content: center;
-        justify-content: space-between;
         position: relative;
+        top: 2em;
+
         width: 100vw;
     }
-    
-    .info-link {
-        font-size: 30px;
-        display: inline-flex;
-        text-decoration: none;
-        padding-right: 5vw;
-        color: white;
-        text-shadow: 2px 2px 3px rgb(95, 95, 95);
-        opacity: .8;
-    }
-    
-    .info-link:hover {
-        color: #5a87b3;
-        opacity: 1;
-       text-shadow: 2px 2px 3px rgb(95, 95, 95);
-    }
-    
+   
     .copyright {
         padding-right: 4em;
         color: white;
