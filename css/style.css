@@ -1,4 +1,4 @@
-    * {
+  * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -14,23 +14,23 @@
     body {
         z-index: -1;
         height: 100vh;
-        background-color: #4E6F90;
-        /* background-color: #5a87b3; */
+        background-color:black;
     }
     /* ================Nav=============== */
     
     .navbar {
-        background-color: #048FB6;
+        background: black;
         height: 80px;
         display: flex;
+        /* opacity: 0.7; */
         justify-content: space-between;
         width: 100vw;
         align-items: center;
         font-size: 1.2rem;
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 100;
-        box-shadow: 1px 1px 3px #000000;
+        box-shadow: 1px 1px 3px #333333;
     }
     
     .navbar-container {
@@ -48,10 +48,9 @@
     .logo {
         height: 50px;
         width: 75px;
-        text-shadow: 4px 4px 4px #000000;
+        text-shadow: 4px 4px 4px whitesmoke;
     }
     #navbar-logo {
-        background-color: white;
         color: white;
         background-size: 100%;
         display: flex;
@@ -62,7 +61,7 @@
         text-decoration: none;
         font-size: 2.2rem;
         padding-bottom: 15px;
-        text-shadow: 4px 4px 4px #000000;
+        text-shadow: 2px 2px 3px rgb(95, 95, 95);
     }
     
     .navbar-menu {
@@ -79,7 +78,7 @@
     
     .nav-link {
         color: white;
-        text-shadow: 2px 2px 4px #000000;
+       text-shadow: 2px 2px 3px rgb(95, 95, 95);
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -90,7 +89,7 @@
     }
     
     .nav-link:hover {
-        color: #a4c5dc;
+        color: #5a5f7a;
         transition: all .2s ease-in-out;
     }
     
@@ -118,7 +117,7 @@
             z-index: -1;
         }
         .navbar-menu.active {
-            background: #4E6F90;
+            background: black;
             top: 100%;
             opacity: .6;
             transition: all .5s ease-in-out;
@@ -149,7 +148,7 @@
         .nav-item:hover {
             font-size: 35px;
             opacity: 1;
-            background-color: #4E6F90;
+            background-color: #5a5f7a;
         }
         #mobile-menu {
             position: absolute;
@@ -175,9 +174,13 @@
     /* ABOUT ME ================================================================= */
     
     .main {
-        background-color: #1C0A24;
-        background-image: url('../images/backgroung.jpg');
+        background-color:black;
+        background-image: url('../images/pexels-mateusz-dach-450035.jpg');
+      
+        filter: grayscale(100%);
+        background-blend-mode: difference;
         background-size: cover;
+        height: 100%;
         background-repeat: no-repeat;
         background-position: center center;
         z-index: -1;
@@ -209,31 +212,10 @@
         text-shadow: 2px 2px 4px #000000;
         padding: 3rem;
     }
-    
-    .my-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
     .nav-logo {
         padding-left: 2vw;
     }
-    .avatar {
-        display: flex;
-        background: none;
-        flex-direction: column;
-        align-items: center;
-        filter: grayscale(90%);
-        /* filter: brightness(75%); */
-        height: 40vh;
-        width: 40vh;
-        opacity: .8;
-        border-radius: 50%;
-        box-shadow: 4px 4px 8px #000000;
-        margin-bottom: 2em;
-    }
-    
+   
     .about-me {
         display: flex;
         flex-direction: column;
@@ -264,7 +246,7 @@
     .main-contact:hover {
         opacity: 1;
         text-shadow: 4px 4px 8px #000000;
-        background-color: #048FB6;
+        background-color: #5f7c85;
         font-size: 18px;
         width: 200px;
         height: 50px;
@@ -299,7 +281,7 @@
     }
     
     #projects {
-        background-color: #4E6F90;
+        background-color: black;
         z-index: -5;
     }
     
@@ -311,7 +293,7 @@
         font-size: 3em;
         text-decoration: underline;
         z-index: 2000;
-        text-shadow: 2px 2px 4px #000000;
+        #474747
     }
     
     .card-container {
@@ -330,7 +312,7 @@
         align-items: center;
         margin: 4em;
         border: 1px solid white;
-        box-shadow: 2px 2px 4px #000000;
+        box-shadow: 2px 2px 4px #a3a3a3;
         border-radius: 10px;
     }
     
@@ -341,7 +323,7 @@
         margin-bottom: 1em;
         border-radius: 10px 10px 0 0;
         box-shadow: inset;
-        box-shadow: 0 0 5px 0 black;
+        box-shadow: 0 0 5px 0 rgb(0, 0, 0);
     }
     
     .card-title {
@@ -393,7 +375,7 @@
         color: white;
         font-size: 20px;
         width: 130px;
-        background-color: #048FB6;
+        background-color: #474747;
         text-shadow: 4px 4px 6px #000000;
         transform: scale(1.1);
         transition: ease-in-out .1s;
@@ -413,7 +395,7 @@
     /* ==================Contact============================= */
     
     .contact {
-        background-color: #4E6F90;
+        background-color: black;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
@@ -436,7 +418,6 @@
         margin-right: auto;
         min-width: 200px;
         width: 100%;
-        /* height: 450px; */
         min-height: 450px;
         padding: 30px;
         -moz-border-radius: 10px;
@@ -451,9 +432,9 @@
     }
     
     input {
-        background-color: #5a87b3;
+        background-color: whitesmoke;
         border-bottom: 1px solid white;
-        color: white;
+        color: black;
         min-width: 300px;
         width: 100%;
         height: 35px;
@@ -470,18 +451,17 @@
         padding-right: 20px;
         margin-bottom: 20px;
         overflow: hidden;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 1px 1px 1px black;
         opacity: .8;
         box-shadow: 2px 2px 4px #000000;
     }
     
     textarea {
         /* background: #4e4f55; */
-        background-color: #5a87b3;
-        ;
-        text-shadow: 2px 2px 4px #000000;
+        background-color: whitesmoke;
+        text-shadow: 1px 1px 2px #000000;
         box-shadow: 2px 2px 4px #000000;
-        color: white;
+        color: black;
         min-width: 300px;
         width: 100%;
         height: 110px;
@@ -527,7 +507,7 @@
         -webkit-background-clip: padding-box;
         color: whitesmoke;
         background-color: #4E6F90;
-        text-shadow: 2px 2px 4px #000000;
+       text-shadow: 2px 2px 3px rgb(95, 95, 95);
         opacity: .8;
         box-shadow: 2px 2px 4px #000000;
         outline: none;
@@ -569,18 +549,18 @@
         text-decoration: none;
         padding-right: 5vw;
         color: white;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 2px 2px 3px rgb(95, 95, 95);
         opacity: .8;
     }
     
     .info-link:hover {
         color: #5a87b3;
         opacity: 1;
-        text-shadow: 5px 5px 10px #000000;
+       text-shadow: 2px 2px 3px rgb(95, 95, 95);
     }
     
     .copyright {
         padding-right: 4em;
         color: white;
-        text-shadow: 2px 2px 4px #000000;
+      text-shadow: 2px 2px 3px rgb(95, 95, 95);
     }
