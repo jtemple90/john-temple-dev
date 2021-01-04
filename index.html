@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <!-- JavaScript Bundle with Popper -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"</script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -48,8 +50,7 @@
     <div class="main">
         <div class="jumbotron">
             <div id="home" class='main-container'>
-                <div class="main-content">
-                    <div class='introduction'>
+                    <div class='intro-container row'>
                         <h1 class="name">John Temple</h1>
                         <h3 class='position'>Software Engineer</h3>
                     </div>
@@ -57,74 +58,81 @@
                         <a class='i-link ' href="https://www.linkedin.com/in/john-temple-dev/ "><i class="fab fa-linkedin-in "></i></a>
                         <a class='i-link ' href="https://github.com/jtemple90 "><i class="fab fa-github-alt "></i></a>
                         <a class='i-link ' href="# "><i class="fab fa-instagram "></i></a>
-                        <a class='i-link ' href="# "><i class="fad fa-envelope"></i></a>
-                        
+                        <a class='i-link ' href="#contact"><i class="fad fa-envelope"></i></a>
                     </div>
-                </div>
             </div>
         </div>
     </div>
     <div id="about">
-        <div>
+        <div class='about-container'>
             <h2 class="page-header">About Me</h2>
-        </div>
-        <div class="about-content">
+            <div class="about-container-inner align-items-center">
+                <p>A Full Stack Software Engineer who specializes in react
+                development with a passion for problem solving. 
+                My background in customer service allows me to connect 
+                with my clients to deliver a dynamic and seamless product 
+                that exceeds their expectations.</p>
                 <div class="btns">
-                    <button class="main-contact">
-                        <a class='contact-btn' href="./images/Resume.pdf" alt="" srcset="">Resume</a>
+                    <button>
+                             <a class='contact-btn' href="./images/Resume.pdf" alt="" srcset="">Resume</a>
                     </button>
-                    <button class='main-contact'>
+                    <button>
                         <a class='contact-btn' href="#contact">Contact Me</a>
                     </button>
                 </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <p>HTML/CSS, Javascript, React, Mongo, Express, Nodejs, Python, PostgreSQL</p>  
+                </div>
+            </div>
+            
         </div>
     </div>
     <section id="projects">
         <div>
             <h2 class="page-header">Projects</h2>
         </div>
-        <div class="card-container">
-            <div class="card">
-                <img class='project-image ' src="./images/spotme.png" alt="Project1Pic">
-                <h3 class='card-title '>Spot Me</h3>
-                <p class="card-description">A full stack react home workout building mobile-first app.</p>
-                <p class="card-description">Technologies: React, Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
-                <div class="links">
-                    <a href="https://github.com/jtemple90/SpotMe" class='project-link link1 '>Github</a>
-                    <a href="#" class='project-link link2 disabled'>Website</a>
-                </div>
-            </div>
-            <!-- <div class="card">
-                <img class='project-image ' src="./images/mainbackground.jpg" alt="Project1Pic">
-                <h3 class='card-title '>Wayfarer</h3>
-                <p class="card-description">A full stack travel site</p>
-                <p class="card-description">Technologies: Python, Django, PostgreSQL, Bootstrap</p>
-                <div class="links">
-                    <a href="https://github.com/danomite84/Project-2-Wayfarer" class='project-link link1 '>Github</a>
-                    <a href="#" class='project-link link2 '>Website</a>
-                </div>
-            </div> -->
-            <div class="card">
-                <img class='project-image ' src="./images/bakes.png" alt="Project1Pic">
-                <h3 class='card-title '>Bakes To Banks</h3>
-                <p class="card-description">A full stack app that pairs bakeries with users.</p>
-                <p class="card-description">Technologies:Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
-                <div class="links">
-                    <a href="https://git.generalassemb.ly/bhowe111/bakes-to-banks" class='project-link link1 '>Github</a>
-                    <a href="https://salty-scrubland-56413.herokuapp.com/" class='project-link link2 '>Website</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class='project-image ' src="./images/tamagotchi.png" alt=" Project1Pic ">
-                <h3 class='card-title '>Tamagotchi</h3>
-                <p class="card-description ">A front end Tamagotchi Game using Pokemon</p>
-                <p class="card-description ">Technologies: HTML/CSS, Javascript</p>
-
-                <div class="links ">
-                    <a href="https://github.com/jtemple90/Tamagotchi-game " class='project-link link1 '>Github</a>
-                    <a href="https://jtemple90.github.io/Tamagotchi-game/ " class='project-link link2 '>Website</a>
-                </div>
-            </div>
+        <!-- Project One -->
+      <div class="row project1">
+        <div class="col-md-6 mg-3">
+          <a href="https://github.com/jtemple90/SpotMe">
+            <img class="img-fluid rounded mb-3 mb-md-0 proimage" src="./images/spotme.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 align-items-center align-text-center pt-5 pt-lg-0 project-text">
+          <h2 class="title">Spot Me</h2>
+          <h5>About</h5>
+          <p class="card-description">A full stack react home workout building mobile-first app. Spot me allows the user to create an acount and build a workout. (Future versions will have a database of exersizes for the user to choose from.) Users can also post and read articles about fitness.</p>
+          <h5>Technologies:</h5>      
+          <p class="card-description">React, Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
+        </div>
+      </div>
+      <div class="row project1">
+        <div class="project-text img-fluid rounded mb-3 mb-md-0 col-md-6 pt-5 pt-md-0 order-2 order-lg-1">
+            <h2 class='title'>Bakes To Banks</h2>
+            <h5>About</h5>
+            <p class="card-description">Bakes To Banks is a team build site that is designed to allow bakeries to create an account and post there expired so soon to be expired baked good so that food banks can order them.</p>
+            <h5>Technologies:</h5>    
+            <p class="card-description">Nodejs, Express, MongoDB, HTML/CSS, Javascript, Bootstrap</p>
+        </div>
+        <a href='https://salty-scrubland-56413.herokuapp.com/' class="proimage img-fluid rounded col-md-6 order-1 order-lg-2 hero-img">
+          <img src="./images/bakes.png" alt='No Picture' class="img-fluid animated" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="row project1">
+        <div class="col-md-6 mg-3">
+          <a href="https://jtemple90.github.io/Tamagotchi-game/">
+            <img class="proimage img-fluid rounded mb-3 mb-md-0" src="./images/tamagotchi.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 align-items-center align-text-center pt-5 pt-lg-0 project-text">
+          <h2 class="title">TamaGotta Raise Em All!</h2>
+          <h5>About</h5>
+          <p class="card-description">A front end Tamagotchi Game using Pokemon.</p>
+          <h5>Technologies:</h5>      
+          <p class="card-description"> HTML/CSS, Javascript</p>
+          
         </div>
     </section>
 
@@ -157,7 +165,7 @@
         </div>
         <footer class='footer footer-bottom align-items-center'>
             <div class="copyright ">
-                <p>John Temple Dev, Copryright &copy; h 2020</p>
+                <p>John Temple Dev, Copryright &copy; 2020</p>
             </div>
         </footer>
     </section>
